@@ -13,6 +13,9 @@
 		E8108CEC19DD626300CE142E /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E8108CEB19DD626300CE142E /* Images.xcassets */; };
 		E8108CEF19DD626300CE142E /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = E8108CED19DD626300CE142E /* LaunchScreen.xib */; };
 		E8108CFB19DD626300CE142E /* SlotMachineTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8108CFA19DD626300CE142E /* SlotMachineTests.swift */; };
+		E8BEEFFA19E28C400072CF93 /* Slot.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8BEEFF919E28C400072CF93 /* Slot.swift */; };
+		E8BEEFFC19E298540072CF93 /* Factory.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8BEEFFB19E298540072CF93 /* Factory.swift */; };
+		E8BEEFFE19E3F3030072CF93 /* SlotBrain.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8BEEFFD19E3F3030072CF93 /* SlotBrain.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +39,9 @@
 		E8108CF419DD626300CE142E /* SlotMachineTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SlotMachineTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E8108CF919DD626300CE142E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E8108CFA19DD626300CE142E /* SlotMachineTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SlotMachineTests.swift; sourceTree = "<group>"; };
+		E8BEEFF919E28C400072CF93 /* Slot.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Slot.swift; sourceTree = "<group>"; };
+		E8BEEFFB19E298540072CF93 /* Factory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Factory.swift; sourceTree = "<group>"; };
+		E8BEEFFD19E3F3030072CF93 /* SlotBrain.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SlotBrain.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,6 +85,9 @@
 			children = (
 				E8108CE419DD626300CE142E /* AppDelegate.swift */,
 				E8108CE619DD626300CE142E /* ViewController.swift */,
+				E8BEEFF919E28C400072CF93 /* Slot.swift */,
+				E8BEEFFB19E298540072CF93 /* Factory.swift */,
+				E8BEEFFD19E3F3030072CF93 /* SlotBrain.swift */,
 				E8108CE819DD626300CE142E /* Main.storyboard */,
 				E8108CEB19DD626300CE142E /* Images.xcassets */,
 				E8108CED19DD626300CE142E /* LaunchScreen.xib */,
@@ -212,8 +221,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E8BEEFFC19E298540072CF93 /* Factory.swift in Sources */,
 				E8108CE719DD626300CE142E /* ViewController.swift in Sources */,
+				E8BEEFFA19E28C400072CF93 /* Slot.swift in Sources */,
 				E8108CE519DD626300CE142E /* AppDelegate.swift in Sources */,
+				E8BEEFFE19E3F3030072CF93 /* SlotBrain.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -339,6 +351,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = SlotMachine/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -349,6 +362,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = SlotMachine/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -407,6 +421,7 @@
 				E8108D0019DD626300CE142E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		E8108D0119DD626300CE142E /* Build configuration list for PBXNativeTarget "SlotMachineTests" */ = {
 			isa = XCConfigurationList;
@@ -415,6 +430,7 @@
 				E8108D0319DD626300CE142E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
